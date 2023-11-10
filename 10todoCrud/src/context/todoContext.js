@@ -6,7 +6,7 @@ export const TodoContext = createContext({
   todoArrItem: [
     {
       id: 1,
-      todo: "Todo Title",
+      todo: "Title",
       completed: false,
     },
   ],

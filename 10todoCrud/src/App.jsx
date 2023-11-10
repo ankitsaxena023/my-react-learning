@@ -11,6 +11,7 @@ function App() {
   const addTodo = (todo) => {
     setTodoArrItem((prev) => [...prev, { id: Date.now(), ...todo }])
   }
+  console.log("arrItems", todoArrItem)
 
   const updateTodo = (id, todo) => { setTodoArrItem((prev) => prev.map((prevItem) => prevItem.id === id ? todo : prevItem)) }
 
@@ -32,6 +33,7 @@ function App() {
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todoArrItem))
   }, [todoArrItem])
+
 
 
   return (
