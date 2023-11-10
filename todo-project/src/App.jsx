@@ -8,7 +8,7 @@ function App() {
   const [itemArray, setItemArray] = useState([]);
 
   const addItem = (name) => {
-    setItemArray(prev => [...prev, { id: Date.now(), name: name, isEditable: false, isUpdatable: false }])
+    setItemArray(prev => [...prev, { id: Date.now(), name: name, isEditable: false, isUpdatable: true }])
   }
 
   const deleteItem = (id) => {
